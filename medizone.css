@@ -1,0 +1,123 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #005a8f;
+    box-shadow: 0 5px 15px rgb(0, 0, 0 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+
+}
+.nav-menu .nav-menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+    
+}
+.nav-menu .nav-menu-list li{
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 30px;
+    position: relative;
+    list-style: none;
+
+}
+.nav-menu .nav-menu-list li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+/*.nav-menu .nav-menu-list li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);   
+}*/
+#active, .nav-menu .nav-menu-list li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    
+}
+.hero{
+    background-image: url(woman-g1308988b1_1920.jpg);
+    width: 100%;
+    
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0 20px 0;
+   
+    box-sizing: border-box;
+}
+.hero .hero-text{
+    color: white;
+    padding: 80px 60px 20px 40px;
+    margin: 20px;
+}
+.hero .hero-text h6{
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    padding: 20px 0 20px 0;
+}
+.hero .hero-text h2{
+    letter-spacing: 4px;
+    color: rgb(28, 13, 13);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0 10px 0;
+}
+.hero .hero-text h1{
+    color: white;
+    letter-spacing: 6px;
+    font-size: 45px;
+    font-weight: 800;
+    padding: 20px 0 10px 0;
+}
+.hero .hero-text span{
+    color: rgb(228, 183, 0);
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.hero .hero-text p{
+    color: black;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+}
+.hero .hero-text button{
+    color: white;
+    background-color: green;
+    border: 10px solid green;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 20px 0 30px 60px;
+    cursor: pointer;
+}
+.section-padding{
+    padding: 20px 20px;
+}
+#feature{
+    text-align: center;
+    display: flex;
+    justify-content:flex-start;
+}
+#feature .feature1{
+    width: 50px;
+}
+

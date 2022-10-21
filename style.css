@@ -1,0 +1,674 @@
+*{
+    font-family: 'Rubik Wet Paint', cursive;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6fe;
+    box-shadow: 0 5px 15px rgb(0, 0, 0 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: green;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: green;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile {
+    display: none;
+    align-items: center;
+}
+#close {
+    display: none;
+}
+
+
+
+#hero{
+    background-image: url(woman-g1308988b1_1920.jpg);
+    height: 90vh;
+    width: 87.1.5%;
+    background-size: cover;
+    background-position: top 8% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #ffffff;
+}
+#hero button{
+    background-color: transparent;
+    background: purple;
+    padding: 14px 80px 14px 65px;
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.section-p1{
+    padding: 40px 80px;
+} 
+
+
+
+#feature .fe-box{
+                  width: 145px;
+                  height: 240px;
+                  text-align: center;
+                  padding: 25px 15px;
+                  box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.09);
+                  border: 1px solid #cce7d0;
+                  border-radius: 4px;
+                  margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 64px rgba(95, 95, 95, 0.9);
+}
+
+#feature .fe-box h6{
+    font-display:block;
+    text-decoration: none;
+    display:inline-block;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 1;
+    border-radius: 10px;
+    background-color:rgba(43, 142, 71, 0.747);
+    color: white;
+    
+}
+
+#feature .fe-box img{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    width: 80px;
+    height: 50px;
+    margin-bottom: 10px;
+    align-items: initial;
+    justify-content: center;
+
+
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: red;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgba(150, 40, 124, 0.769);
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgba(143, 143, 35, 0.842);
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: rgba(12, 23, 174, 0.772);
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: rgba(191, 180, 19, 0.772);
+}
+
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid red;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(118, 118, 118, 0.511);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(124, 22, 22, 0.537);
+}
+
+
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 5px 0;
+}
+#product1 .pro .des span{
+    color: rgb(123, 123, 123);
+    font-size: 12px;
+    letter-spacing: 2px;
+    
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: blue;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(237, 214, 6);
+}
+#product1 .pro .des h4{
+    padding-top: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 154, 0);
+}
+.section-p1 {
+    padding: 40px 20px;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(211, 211, 211);
+    font-weight: 500;
+    color: rgb(108, 181, 0);
+    border: 1px solid red;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+#product1 .pro-container {
+                             display: flex;
+                             justify-content: space-between;
+                             padding-top: 20px;
+                             flex-wrap: wrap;
+}
+.section-m1{
+    margin: 40px 0;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(stone-gcecab4527_1920.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#banner h4{
+    font-size: 16px;
+    color: white;
+}
+#banner h2{
+    font-size: 32px;
+    color: white;
+    padding: 0px 0;
+}
+#banner h2 span{
+   
+    color: rgb(156, 10, 10);
+    
+}
+button.normal{
+font-size: 14px;
+font-weight: 600;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 15px;
+padding-bottom: 15px;
+color: #1a1a1a;
+background-color: white;
+border-radius: 4px;
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.2s;
+margin-bottom: 16px;
+
+}
+
+#banner button:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+#sm-banner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(girl-2696947_1920.jpg);
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+#sm-banner .banner-box2{
+    background-image: url(little-2176130_1920.jpg);
+}
+#sm-banner h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+#sm-banner h2{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+#sm-banner span{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+    
+    }
+    #sm-banner .banner-box:hover button{
+        background: green;
+        border: 1px solid green;
+    }
+
+    #banner3 .banner-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(wintersell.jpg);
+        min-width: 20%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #banner3 h2{
+        color: rgb(35, 0, 175);
+        font-weight: 900;
+        font-size: 22px;
+    }
+    #banner3 h3{
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 15px;
+    }
+    #banner3{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 80px;
+    }
+    #banner3 .banner-box2{
+        background-image: url(serumcollection.jpg);
+
+    }
+    #banner3 .banner-box3{
+        background-image: url(facemask.png);
+    }
+
+    #newsletter {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url(solidbackground.png);
+        background-color: rgb(3, 65, 82);
+        background-repeat: no-repeat;
+        background-position: 20% 100%;
+
+    }
+
+    #newsletter h4{
+        font-size: 22px;
+        font-weight: 800;
+        color: #ffffff;
+    }
+    #newsletter p{
+        color: #ffffff;
+    }
+    #newsletter p span{
+        color: rgb(227, 185, 0);
+    }
+
+  #newsletter input {
+                       height: 3.125rem;
+                       padding: 0 1.2em;
+                       font-size: 14px;
+                       width: 100%;
+                       border: 1px solid transparent;
+                       border-radius: 4px;
+                       outline: none;
+                       border-bottom-right-radius: 0;
+                       border-top-right-radius: 0;
+  }
+  #newsletter button{
+    color: white;
+    background-color: green;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    
+  }
+  #newsletter .form{
+    display: flex;
+    width: 40% ;
+  }
+  footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    transition: 0.5s;
+  }
+  footer .logo{
+    margin-bottom: 30px;
+  }
+  footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+   
+  footer p {
+         font-size: 13px;
+         margin: 0 0 8px 0;
+  }
+  footer a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #000000e2;
+  }
+ 
+  footer .follow{
+   margin-top: 10px;
+  }
+  footer .follow i{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding-right: 4px;
+  }
+
+   footer .install .row img{
+    border: 1px solid green;
+    border-radius: 6px;
+   }
+   footer .install img {
+     width: 120px;
+     margin: 10px 0 15px 0;
+   }
+   footer .install {
+    text-align: right;
+    display: flex;
+    margin-left: 200px;
+   }
+ footer .col {
+    margin-left: 50px;
+    text-decoration: none;
+ }
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: none;
+}
+.col a:hover{
+    color: green;
+
+
+}
+footer .icon i:hover{
+    color: green;
+}
+
+
+
+
+
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 8px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(231, 231, 231);
+        box-shadow: 0 40px 60px rgb(0, 0, 0 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active {
+        right: 0px;
+    }
+    #navbar li {
+            margin-bottom: 25px;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{ 
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag {
+            display: none;
+    }
+    #hero {
+        height: 70vh;
+        width: 80.5%;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+      
+      
+       
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        
+        margin: 15px;
+        
+    }
+    #banner {
+        
+        height: 20vh;
+       
+    }
+    #sm-banner .banner-box {
+       
+        min-width: 90%;
+        height: 30vh;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+       
+        width: 20%;
+        
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+    footer .col {
+        margin-right: 10px;
+        margin-left: 100px;
+        
+    }
+   
+}
+@media (max-width:477px) {
+    #header {
+        padding: 10px 40px;
+        
+    }
+    #hero {
+        
+        width: 57%;
+        
+    }
+    #feature .fe-box {
+        width: 85px;
+        
+     
+        padding: 15px 15px;
+        
+        margin: 5px 0;
+    }
+    #product1 .pro {
+        min-width: 130px;
+        width: 10%;
+        padding: 4px 1px;
+        
+    }
+    #sm-banner {
+       width: 83%;
+    }
+    #sm-banner h4 {
+       padding-top: 20px;
+    }
+    #newsletter h4 {
+        padding-left: 15px;
+        
+    }
+    #newsletter p {
+        padding-left: 15px;
+    }
+    #newsletter .form {
+        padding-left: 15px;
+    }
+    footer .install {
+        text-align: left;
+        display: flex;
+        margin-left: 10px;
+    }
+    .section-p1 {
+        padding: 10px 1px;
+    }
+    #newsletter .form {
+        width: 95%;
+    }
+    footer .col {
+        margin-right: 80px;
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+
+}
